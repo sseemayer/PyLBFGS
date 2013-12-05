@@ -28,10 +28,10 @@ A simple Python binding for [libLBFGS](http://www.chokkan.org/software/liblbfgs)
 
 No setup.py yet, but you can simply add the `pylbfgs` directory into your project after compiling libLBFGS:
 
-	1. clone this repo and `cd` into it
-	2. `git submodule init && git submodule update`
-	3. `cd pylbfgs/liblbfgs`
-	4. `./autogen.sh && ./configure.sh && make`
+  1. clone this repo and `cd` into it
+  2. `git submodule init && git submodule update`
+  3. `cd pylbfgs/liblbfgs`
+  4. `./autogen.sh && ./configure.sh && make`
 
 
 ## License
