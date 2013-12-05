@@ -126,4 +126,4 @@ def lbfgs(x, evaluate, instance=None, param=default_params(), progress=progress)
     instance = ct.byref(instance) if instance != None else None
     code = liblbfgs.lbfgs(x.size, x, ct.byref(fx), eval_wrapper, progress, instance, param)
 
-    return code, fx, x
+    return code, fx.value, x

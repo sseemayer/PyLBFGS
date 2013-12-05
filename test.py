@@ -20,6 +20,8 @@ param = pylbfgs.default_params()
 param.epsilon = 1e-30
 param.past = 3
 
-pylbfgs.lbfgs(x, evaluate)
+code, fx, x = pylbfgs.lbfgs(x, evaluate)
+
+print("Optimization exited with code {code} and function value {fx:.5f}".format(code=code, fx=fx))
 
 print("AFTER: " + str(x))
